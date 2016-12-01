@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" prefHeight="496.0" prefWidth="686.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane>
+         <children>
+            <TabPane layoutY="76.0" prefHeight="406.0" prefWidth="595.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Host">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Button layoutX="386.0" layoutY="155.0" mnemonicParsing="false" text="Add" />
+                              <TextField layoutX="174.0" layoutY="97.0" />
+                              <TextField layoutX="174.0" layoutY="49.0" />
+                              <ComboBox layoutX="174.0" layoutY="206.0" prefWidth="150.0" promptText="Choose Model" />
+                              <ComboBox layoutX="174.0" layoutY="155.0" prefWidth="150.0" promptText="Choose Type" visibleRowCount="5" />
+                              <ComboBox layoutX="174.0" layoutY="258.0" prefWidth="150.0" promptText="Choose Location" />
+                              <Label layoutX="71.0" layoutY="53.0" text="IP Address" underline="true" />
+                              <Label layoutX="69.0" layoutY="101.0" text="Host Name" underline="true" />
+                              <Label layoutX="82.0" layoutY="210.0" text="Model" underline="true" />
+                              <Label layoutX="86.0" layoutY="159.0" text="Type" underline="true" />
+                              <Label layoutX="76.0" layoutY="262.0" text="Location" underline="true" wrapText="true" />
+                              <Button layoutX="379.0" layoutY="206.0" mnemonicParsing="false" text="Update" />
+                              <Button layoutX="379.0" layoutY="258.0" mnemonicParsing="false" text="Delete" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Vulnerability">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextField layoutX="157.0" layoutY="34.0" />
+                              <ComboBox layoutX="157.0" layoutY="89.0" prefWidth="150.0" promptText="Choose Risk Level" />
+                              <ComboBox layoutX="157.0" layoutY="143.0" prefWidth="150.0" promptText="Choose Risk Factor" />
+                              <TextField layoutX="158.0" layoutY="204.0" />
+                              <TextArea layoutX="158.0" layoutY="257.0" prefHeight="86.0" prefWidth="320.0" />
+                              <Label layoutX="64.0" layoutY="38.0" text="Vulnerability" underline="true" />
+                              <Label layoutX="64.0" layoutY="93.0" text="Risk Level" underline="true" />
+                              <Label layoutX="64.0" layoutY="147.0" text="Risk Factor" underline="true" />
+                              <Label layoutX="64.0" layoutY="208.0" text="CVE reference" underline="true" />
+                              <Label layoutX="64.0" layoutY="283.0" text="Description" underline="true" />
+                              <Button layoutX="396.0" layoutY="89.0" mnemonicParsing="false" text="Add" />
+                              <Button layoutX="387.0" layoutY="143.0" mnemonicParsing="false" text="Update" />
+                              <Button layoutX="389.0" layoutY="204.0" mnemonicParsing="false" text="Delete" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Location">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextField layoutX="149.0" layoutY="40.0" />
+                              <TextField layoutX="149.0" layoutY="89.0" />
+                              <ComboBox layoutX="149.0" layoutY="164.0" prefWidth="150.0" promptText="Choose Business" visibleRowCount="5" />
+                              <Label layoutX="60.0" layoutY="44.0" text="Subnet" underline="true" />
+                              <Label layoutX="69.0" layoutY="93.0" text="City" underline="true" />
+                              <Label layoutX="57.0" layoutY="168.0" text="Business" underline="true" />
+                              <Button layoutX="400.0" layoutY="40.0" mnemonicParsing="false" text="Add" />
+                              <Button layoutX="400.0" layoutY="89.0" mnemonicParsing="false" text="Update" />
+                              <Button layoutX="400.0" layoutY="164.0" mnemonicParsing="false" text="Delete" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Make">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextField layoutX="149.0" layoutY="49.0" />
+                              <TextField layoutX="149.0" layoutY="103.0" />
+                              <TextField layoutX="149.0" layoutY="164.0" />
+                              <ComboBox layoutX="149.0" layoutY="226.0" prefWidth="150.0" promptText="Choose Type" />
+                              <Label layoutX="68.0" layoutY="53.0" text="Make" />
+                              <Label layoutX="68.0" layoutY="107.0" text="Model" />
+                              <Label layoutX="68.0" layoutY="168.0" text="OS" />
+                              <Label layoutX="64.0" layoutY="230.0" text="Type" />
+                              <Button layoutX="372.0" layoutY="49.0" mnemonicParsing="false" text="Add" />
+                              <Button layoutX="365.0" layoutY="103.0" mnemonicParsing="false" text="Update" />
+                              <Button layoutX="367.0" layoutY="164.0" mnemonicParsing="false" text="Delete" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Search Host">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextField layoutX="45.0" layoutY="30.0" promptText="Host or IP Address" />
+                              <Button layoutX="207.0" layoutY="30.0" mnemonicParsing="false" text="Search" />
+                              <TableView layoutX="14.0" layoutY="86.0" prefHeight="94.0" prefWidth="574.0">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="Host Name" />
+                                  <TableColumn prefWidth="75.0" text="IP Address" />
+                                    <TableColumn prefWidth="60.0" text="Type" />
+                                    <TableColumn prefWidth="61.0" text="Make" />
+                                    <TableColumn prefWidth="73.0" text="Model" />
+                                    <TableColumn prefWidth="61.0" text="OS" />
+                                    <TableColumn prefWidth="76.0" text="Location" />
+                                    <TableColumn prefWidth="92.0" text="Vulnerability" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Search Vulnerability">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextField layoutX="45.0" layoutY="30.0" promptText="Vulnerability or CVE" />
+                              <Button layoutX="207.0" layoutY="30.0" mnemonicParsing="false" text="Search" />
+                              <TableView layoutX="14.0" layoutY="86.0" prefHeight="222.0" prefWidth="574.0">
+                                 <columns>
+                                    <TableColumn prefWidth="75.0" text="Name" />
+                                    <TableColumn prefWidth="75.0" text="Risk Level" />
+                                    <TableColumn prefWidth="75.0" text="Risk Factor" />
+                                    <TableColumn prefWidth="46.0" text="CVE" />
+                                    <TableColumn prefWidth="73.0" text="Hosts" />
+                                    <TableColumn prefWidth="229.0" text="Description" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

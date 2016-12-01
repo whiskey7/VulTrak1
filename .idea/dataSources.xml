@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="233761358">
+    <data-source source="LOCAL" name="SQL Server (Microsoft) - Nodachi@cot-cis3365-07" uuid="d6e909ed-dc73-4841-a862-0fc1d5e3d4d4">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://cot-cis3365-07:1433;databaseName=Nodachi;</jdbc-url>
+    </data-source>
+  </component>
+</project>
